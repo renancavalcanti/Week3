@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Basic Table Structure</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+
+    <h2>Create Simple Table</h2>
+    <table border="2" cellspacing="10" width="500px">
+        <tr align="right">
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr align="center">
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+
+    <h2 >Table Header</h2>
+    <table border="1" cellspacing="0" width="500px">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <h2>Spanning Rows and Columns</h2>
+    <table border="1" width="50%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Laptop</td>
+                <td>CAD$ 1533,90</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Tablet</td>
+                <td>CAD$ 899,99</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Discount</td>
+                <td colspan="2">Cupom1 -CAD$ 10</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Discount</td> -->
+                <td colspan="2">Cupom2 -CAD$ 30</td>
+            </tr>
+
+            <tr>
+                <td><h3>Total</h3></td>
+                <td colspan="2">CAD$ 2499.99</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>
