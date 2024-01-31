@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Basic Form Structure</h2>
+    <form action="#" method="post">
+        <input />
+    </form>
+
+    <h2>Text Inputs</h2>
+    <form>
+        <input type="text" placeholder="Type a text..." name="text"/>
+        <input type="password" placeholder="Type your password..." name="password"/>
+        <input type="email" placeholder="Type your email..." name="email"/>
+        <input type="submit" value="Submit"/>
+    </form>
+
+    <h2>Labels</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name"/>
+    </form>
+
+    <h2>Radio Buttons and Checkbox</h2>
+    <form>
+        <label><input type="radio" name="option" value="1" /> Option 1</label>
+        <label><input type="radio" name="option" value="2" checked/> Option 2</label>
+
+        <label><input type="checkbox" name="check1"/>Check 1</label>
+        <label><input type="checkbox" name="check2"/>Check 2</label>
+    </form>
+
+    <h2>Dropdown List</h2>
+    <form>
+        <select>
+            <option value=""></option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </form>
+
+    <h2>Text Area Multline</h2>
+    <form>
+        <textarea rows="4" cols="50" placeholder="Enter yout comment here..." name="text"></textarea>
+
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset"/>
+    </form>
+
+    <h2>Form Validation</h2>
+    <form>
+        <input type="text" placeholder="Required field" name="requiredField" required/>
+        <input type="text" minlength="5" maxlength="10" placeholder="Min and Max" name="minMaxField"/>
+        <input type="text" pattern="[A-Za-z]+" placeholder="Only Letters" name="regexField"/>
+
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
